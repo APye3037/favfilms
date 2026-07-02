@@ -1,0 +1,128 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.app-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.app-nav a {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.app-nav a.active {
+  text-decoration: underline;
+}
+
+.stat-cards {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card__value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stat-card__label {
+  color: #64748b;
+}
+
+.film-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.film-table th,
+.film-table td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.film-table__actions button {
+  margin-right: 0.5rem;
+}
+
+.type-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: white;
+}
+
+.type-list__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.type-list__actions button {
+  margin-left: 0.5rem;
+}
+
+.empty-state {
+  color: #64748b;
+  font-style: italic;
+}
+
+.panel {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.form-field {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  max-width: 24rem;
+}
+
+.field-error {
+  color: #dc2626;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.form-actions button {
+  margin-right: 0.5rem;
+}
+
+.dialog {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff7ed;
+}

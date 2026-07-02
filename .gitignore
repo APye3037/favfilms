@@ -1,0 +1,30 @@
+# Environment variables (never commit real secrets/keys)
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+.next/
+out/
+
+# Supabase CLI local state
+.supabase/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Editor/OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*

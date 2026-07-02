@@ -20,10 +20,10 @@ below apply to ALL development work, whether run via `/feature` or by hand.
 - Backend and frontend builders stay in their own folders and never touch each other's.
 - Every build agent runs typecheck, lint, and tests before finishing.
 
-## Project specifics — FILL THESE IN for your repo
-- Backend folders:   <e.g. /server, /api>
-- Frontend folders:  <e.g. /web, /app>
-- Test command:      <e.g. npm test>
-- Typecheck command: <e.g. npm run typecheck>
-- Lint command:      <e.g. npm run lint>
-- Stack & key conventions: <e.g. Node + Express + Postgres; React + Vite; Vitest>
+## Project specifics
+- Backend folders:   `/supabase` (SQL migrations + Postgres RPC functions only, no app server)
+- Frontend folders:  `/web`
+- Test command:      `npm --prefix web test`
+- Typecheck command: `npm --prefix web run typecheck`
+- Lint command:      `npm --prefix web run lint`
+- Stack & key conventions: React + Vite + TypeScript SPA; Supabase (Postgres) as sole datastore, accessed directly from the browser via `@supabase/supabase-js` with the anon key (no backend server); TanStack Query for data fetching/cache invalidation; Recharts for charts; Vitest + React Testing Library for tests; ESLint + `tsc --noEmit`; multi-step/transactional mutations implemented as Postgres RPC functions rather than sequential client calls.

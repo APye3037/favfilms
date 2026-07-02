@@ -1,0 +1,13 @@
+# Supabase CLI project config for Favourite Films Log.
+# Links local migrations under supabase/migrations to the remote project.
+# Remote project ref: ntnqjuyumbwugykhdbwa (https://ntnqjuyumbwugykhdbwa.supabase.co)
+#
+# This file does not contain secrets. To link and push migrations once you
+# have a Supabase access token:
+#   supabase link --project-ref ntnqjuyumbwugykhdbwa
+#   supabase db push
+
+project_id = "favfilms"
+
+[db]
+major_version = 15
